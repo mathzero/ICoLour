@@ -1,0 +1,76 @@
+#' @import ggplot2
+#' @import dichromat
+
+# define master list of Imperial Brand colours
+# colours are taken from here: https://www.imperial.ac.uk/brand-style-guide/visual-identity/brand-colours/
+imperial_colours= c(`navy` = "#002147",
+                    `imperial blue` = "#003E74",
+                    `light grey` = "#EBEEEE",
+                    `cool grey` = "#9D9D9D",
+                    `light blue` = "#D4EFFC",
+                    `dark grey` = "#373A36",
+
+                    # cool colours
+                    `blue` ="#006EAF",
+                    `process blue` ="#0091D4",
+                    `pool blue` = "#00ACD7",
+                    `dark teal` ="#0f8291",
+                    `teal` = "#009CBC",
+                    `seaglass` ="#379f9f",
+                    `dark green` = "#02893B",
+                    `kermit green` = "#66a40a",
+                    `lime` = "#BBCE00",
+
+                    # warm colours
+                    `orange`="#D24000",
+                    `tangerine`="#EC7300",
+                    `lemon yellow`="#FFDD00",
+                    `brick`="#A51900",
+                    `red`="#DD2501",
+                    `cherry red`="#E40043",
+                    `raspberry red`="#9F004E",
+                    `magenta pink`="#C81E78",
+                    `iris` = "#751E66",
+                    `violet`="#960078",
+                    `plum`="#321E6D",
+                    `purple` = "#653098")
+
+# we don't want capitals here so change to lower case
+# names(imperial_colours) <- stringr::str_to_lower(names(imperial_colours))
+
+#' Function to extract imperial colors as hex codes
+#'
+#' @param ... Character names of imperial_colors
+#'
+imperial_cols <- function(...) {
+  cols <- c(...)
+  if (is.null(cols))
+    return (imperial_colours)
+  imperial_colours[cols]
+}
+
+imperial_palettes <- list(
+  # main three palettes
+  `core`  = imperial_cols("navy",
+                          "imperial blue" ,
+                          "light grey",
+                          "cool grey",
+                          "light blue",
+                          "dark grey"),
+
+  `cool`  = imperial_cols("blue", "process blue","pool blue",
+                          "dark teal","teal","seaglass","dark green",
+                          "kermit green","lime"),
+
+  `warm`   = imperial_cols("orange","tangerine","lemon yellow","brick","red","cherry red"),
+
+  # website colour themes
+  `pink` =  imperial_cols("magenta pink", "violet", "plum", "purple"),
+  `green` = imperial_cols("dark green", "dark teal", "blue", "kermit green"),
+  `red` =  imperial_cols("brick", "orange", "imperial blue", "tangerine"),
+  `blue` = imperial_cols("blue", "imperial blue", "dark teal", "pool blue"),
+  `teal/blue/plum` = imperial_cols("dark teal", "blue", "plum", "seaglass"),
+  `violet/blue/navy` =imperial_cols("violet", "blue", "navy", "pool blue"),
+  `orange/green/imperial blue`= imperial_cols("orange", "dark green", "imperial blue", "pool blue"),
+  `brick/navy/teal` = imperial_cols("brick", "navy", "dark teal", "tangerine")
+)
