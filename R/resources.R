@@ -53,16 +53,16 @@ imperial_palettes <- list(
   # main three palettes
   `core`  = imperial_cols("navy",
                           "imperial blue" ,
+                          "light blue",
                           "light grey",
                           "cool grey",
-                          "light blue",
                           "dark grey"),
 
   `cool`  = imperial_cols("blue", "process blue","pool blue",
-                          "dark teal","teal","seaglass","dark green",
+                          "teal","seaglass","dark teal","dark green",
                           "kermit green","lime"),
 
-  `warm`   = imperial_cols("orange","tangerine","lemon yellow","brick","red","cherry red"),
+  `warm`   = imperial_cols("lemon yellow","tangerine","orange","red","brick","cherry red"),
 
   # website colour themes
   `pink` =  imperial_cols("magenta pink", "violet", "plum", "purple"),
@@ -72,5 +72,17 @@ imperial_palettes <- list(
   `teal/blue/plum` = imperial_cols("dark teal", "blue", "plum", "seaglass"),
   `violet/blue/navy` =imperial_cols("violet", "blue", "navy", "pool blue"),
   `orange/green/imperial blue`= imperial_cols("orange", "dark green", "imperial blue", "pool blue"),
-  `brick/navy/teal` = imperial_cols("brick", "navy", "dark teal", "tangerine")
+  `brick/navy/teal` = imperial_cols("brick", "navy", "dark teal", "tangerine"),
+
+
+  # manufactured gradients
+  `blue grey gradient` = imperial_cols("navy", "imperial blue" ,
+                                  "blue", "pool blue", "light blue",
+                                  "light grey", "cool grey", "dark grey"
+                                  ),
+
+  `blue green gradient` = imperial_cols("navy", "imperial blue" ,
+                                       "blue", "pool blue", "light blue",
+                                       "lime", "dark green"
+  )
 )

@@ -1,4 +1,9 @@
 # Demonstration
+
+# install from github
+devtools::install_github("mathzero/ICoLour")
+
+# load libraries
 library(ggplot2)
 library(ICoLour)
 library(dichromat)
@@ -22,7 +27,10 @@ ggplot(mydat,aes(x=x,y=y,col=col)) +
   theme_bw() +
   scale_color_imperial(palette = 'warm', discrete = T)
 
-
-install.packages("roxygen2")
-
+imperial_colours
+# create plot with warm colours
+ggplot(mydat,aes(x=x, y=col,col=col)) +
+  geom_boxplot() +
+  theme_bw() +
+  scale_color_imperial(palette = 'blue', discrete = T)
 
