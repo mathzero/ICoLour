@@ -27,10 +27,17 @@ ggplot(mydat,aes(x=x,y=y,col=col)) +
   theme_bw() +
   scale_color_imperial(palette = 'warm', discrete = T)
 
-imperial_colours
-# create plot with warm colours
+
+# create plot with blue colours
 ggplot(mydat,aes(x=x, y=col,col=col)) +
   geom_boxplot() +
   theme_bw() +
   scale_color_imperial(palette = 'blue', discrete = T)
+
+
+# create plot with blue green gradient
+ggplot(mydat,aes(x=x, y=y, col=y)) +
+  geom_point() +
+  theme_bw() +
+  scale_color_imperial(palette = 'blue green gradient', discrete = F)
 
