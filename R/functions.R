@@ -1,7 +1,12 @@
-
 #' Return function to interpolate an Imperial color palette
 #'
-#' @param palette Character name of palette in imperial_palettes
+#' @param palette Character name of palette in imperial_palettes. Choose from:
+#' \itemize{
+#'  \item core, cool, warm, extended,
+#'   \item pink, green, red blue,
+#'   \item teal_blue_plum, violet_blue_navy, orange_green_imperial_blue, brick_navy_teal,
+#'   \item blue_grey_gradient, blue_green_gradient
+#' }
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments to pass to colorRampPalette()
 #' @import ggplot2
@@ -18,7 +23,13 @@ imperial_pal <- function(palette = "core", reverse = FALSE, ...) {
 
 #' Color scale constructor for imperial colors
 #'
-#' @param palette Character name of palette in imperial_palettes
+#' @param palette Character name of palette in imperial_palettes. Choose from:
+#' \itemize{
+#'  \item core, cool, warm, extended,
+#'   \item pink, green, red blue,
+#'   \item teal_blue_plum, violet_blue_navy, orange_green_imperial_blue, brick_navy_teal,
+#'   \item blue_grey_gradient, blue_green_gradient
+#' }
 #' @param discrete Boolean indicating whether color aesthetic is discrete or not
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments passed to ggplot2::discrete_scale() or
@@ -36,7 +47,13 @@ scale_color_imperial <- function(palette = "main", discrete = TRUE, reverse = FA
 
 #' Fill scale constructor for imperial colors
 #'
-#' @param palette Character name of palette in imperial_palettes
+#' @param palette Character name of palette in imperial_palettes. Choose from:
+#' \itemize{
+#'  \item core, cool, warm, extended,
+#'   \item pink, green, red blue,
+#'   \item teal_blue_plum, violet_blue_navy, orange_green_imperial_blue, brick_navy_teal,
+#'   \item blue_grey_gradient, blue_green_gradient
+#' }
 #' @param discrete Boolean indicating whether color aesthetic is discrete or not
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments passed to ggplot2::discrete_scale() or
