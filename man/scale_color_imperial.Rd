@@ -7,7 +7,13 @@
 scale_color_imperial(palette = "main", discrete = TRUE, reverse = FALSE, ...)
 }
 \arguments{
-\item{palette}{Character name of palette in imperial_palettes}
+\item{palette}{Character name of palette in imperial_palettes. Choose from:
+\itemize{
+ \item core, cool, warm, extended,
+ \item pink, green, red blue,
+ \item teal_blue_plum, violet_blue_navy, orange_green_imperial_blue, brick_navy_teal,
+ \item blue_grey_gradient, blue_green_gradient
+}}
 
 \item{discrete}{Boolean indicating whether color aesthetic is discrete or not}
 

@@ -4,17 +4,23 @@
 \alias{scale_fill_imperial}
 \title{Fill scale constructor for imperial colors}
 \usage{
-scale_fill_imperial(palette = "main", discrete = TRUE, reverse = FALSE, ...)
+scale_fill_imperial(palette = "core", discrete = TRUE, reverse = FALSE, ...)
 }
 \arguments{
-\item{palette}{Character name of palette in imperial_palettes}
+\item{palette}{Character name of palette in imperial_palettes. Choose from:
+\itemize{
+ \item core, cool, warm, extended,
+ \item pink, green, red blue,
+ \item teal_blue_plum, violet_blue_navy, orange_green_imperial_blue, brick_navy_teal,
+ \item blue_grey_gradient, blue_green_gradient
+}}
 
 \item{discrete}{Boolean indicating whether color aesthetic is discrete or not}
 
 \item{reverse}{Boolean indicating whether the palette should be reversed}
 
 \item{...}{Additional arguments passed to ggplot2::discrete_scale() or
-scale_fill_gradientn(), used respectively when discrete is TRUE or FALSE}
+ggplot2::scale_fill_gradientn(), used respectively when discrete is TRUE or FALSE}
 }
 \description{
 Fill scale constructor for imperial colors

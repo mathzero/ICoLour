@@ -3,9 +3,9 @@
 #' @param palette Character name of palette in imperial_palettes. Choose from:
 #' \itemize{
 #'  \item core, cool, warm, extended,
-#'   \item pink, green, red blue,
-#'   \item teal_blue_plum, violet_blue_navy, orange_green_imperial_blue, brick_navy_teal,
-#'   \item blue_grey_gradient, blue_green_gradient
+#'  \item pink, green, red blue,
+#'  \item teal_blue_plum, violet_blue_navy, orange_green_imperial_blue, brick_navy_teal,
+#'  \item blue_grey_gradient, blue_green_gradient
 #' }
 #' @param reverse Boolean indicating whether the palette should be reversed
 #' @param ... Additional arguments to pass to colorRampPalette()
@@ -26,9 +26,9 @@ imperial_pal <- function(palette = "core", reverse = FALSE, ...) {
 #' @param palette Character name of palette in imperial_palettes. Choose from:
 #' \itemize{
 #'  \item core, cool, warm, extended,
-#'   \item pink, green, red blue,
-#'   \item teal_blue_plum, violet_blue_navy, orange_green_imperial_blue, brick_navy_teal,
-#'   \item blue_grey_gradient, blue_green_gradient
+#'  \item pink, green, red blue,
+#'  \item teal_blue_plum, violet_blue_navy, orange_green_imperial_blue, brick_navy_teal,
+#'  \item blue_grey_gradient, blue_green_gradient
 #' }
 #' @param discrete Boolean indicating whether color aesthetic is discrete or not
 #' @param reverse Boolean indicating whether the palette should be reversed
@@ -50,9 +50,9 @@ scale_color_imperial <- function(palette = "main", discrete = TRUE, reverse = FA
 #' @param palette Character name of palette in imperial_palettes. Choose from:
 #' \itemize{
 #'  \item core, cool, warm, extended,
-#'   \item pink, green, red blue,
-#'   \item teal_blue_plum, violet_blue_navy, orange_green_imperial_blue, brick_navy_teal,
-#'   \item blue_grey_gradient, blue_green_gradient
+#'  \item pink, green, red, blue,
+#'  \item teal_blue_plum, violet_blue_navy, orange_green_imperial_blue, brick_navy_teal,
+#'  \item blue_grey_gradient, blue_green_gradient
 #' }
 #' @param discrete Boolean indicating whether color aesthetic is discrete or not
 #' @param reverse Boolean indicating whether the palette should be reversed
