@@ -3,7 +3,7 @@
 #'
 #' @param palette Character name of palette in imperial_palettes
 #' @param reverse Boolean indicating whether the palette should be reversed
-#' @param ... Additional arguments to pass to dichromat::colorRampPalette()
+#' @param ... Additional arguments to pass to colorRampPalette()
 #' @import ggplot2
 #' @import dichromat
 
@@ -12,7 +12,7 @@ imperial_pal <- function(palette = "core", reverse = FALSE, ...) {
 
   if (reverse) pal <- rev(pal)
 
-  dichromat::colorRampPalette(pal, ...)
+  colorRampPalette(pal, ...)
 }
 
 
