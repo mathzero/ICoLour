@@ -64,24 +64,38 @@ imperial_palettes <- list(
 
   `warm`   = imperial_cols("lemon yellow","tangerine","orange","red","brick","cherry red"),
 
+  # extended
+  `extended` =imperial_cols("navy",
+                            "imperial blue",
+                            "blue",
+                            "dark teal",
+                            "dark green",
+                            "lime",
+                            "lemon yellow",
+                            "tangerine",
+                            "brick",
+                            "cherry",
+                            "purple",
+                            "dark grey"),
+
   # website colour themes
   `pink` =  imperial_cols("magenta pink", "violet", "plum", "purple"),
   `green` = imperial_cols("dark green", "dark teal", "blue", "kermit green"),
   `red` =  imperial_cols("brick", "orange", "imperial blue", "tangerine"),
   `blue` = imperial_cols("blue", "imperial blue", "dark teal", "pool blue"),
-  `teal/blue/plum` = imperial_cols("dark teal", "blue", "plum", "seaglass"),
-  `violet/blue/navy` =imperial_cols("violet", "blue", "navy", "pool blue"),
-  `orange/green/imperial blue`= imperial_cols("orange", "dark green", "imperial blue", "pool blue"),
-  `brick/navy/teal` = imperial_cols("brick", "navy", "dark teal", "tangerine"),
+  `teal_blue_plum` = imperial_cols("dark teal", "blue", "plum", "seaglass"),
+  `violet_blue_navy` =imperial_cols("violet", "blue", "navy", "pool blue"),
+  `orange_green_imperial_blue`= imperial_cols("orange", "dark green", "imperial blue", "pool blue"),
+  `brick_navy_teal` = imperial_cols("brick", "navy", "dark teal", "tangerine"),
 
 
   # manufactured gradients
-  `blue grey gradient` = imperial_cols("navy", "imperial blue" ,
+  `blue_grey_gradient` = imperial_cols("navy", "imperial blue" ,
                                   "blue", "pool blue", "light blue",
                                   "light grey", "cool grey", "dark grey"
                                   ),
 
-  `blue green gradient` = imperial_cols("navy", "imperial blue" ,
+  `blue_green_gradient` = imperial_cols("navy", "imperial blue" ,
                                        "blue", "pool blue", "light blue",
                                        "lime", "dark green"
   )

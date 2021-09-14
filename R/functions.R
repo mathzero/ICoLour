@@ -3,7 +3,7 @@
 #'
 #' @param palette Character name of palette in imperial_palettes
 #' @param reverse Boolean indicating whether the palette should be reversed
-#' @param ... Additional arguments to pass to dichromat::colorRampPalette()
+#' @param ... Additional arguments to pass to colorRampPalette()
 #' @import ggplot2
 #' @import dichromat
 
@@ -12,7 +12,7 @@ imperial_pal <- function(palette = "core", reverse = FALSE, ...) {
 
   if (reverse) pal <- rev(pal)
 
-  dichromat::colorRampPalette(pal, ...)
+  colorRampPalette(pal, ...)
 }
 
 
@@ -42,7 +42,7 @@ scale_color_imperial <- function(palette = "main", discrete = TRUE, reverse = FA
 #' @param ... Additional arguments passed to ggplot2::discrete_scale() or
 #'            ggplot2::scale_fill_gradientn(), used respectively when discrete is TRUE or FALSE
 #'
-scale_fill_imperial <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
+scale_fill_imperial <- function(palette = "core", discrete = TRUE, reverse = FALSE, ...) {
   pal <- imperial_pal(palette = palette, reverse = reverse)
 
   if (discrete) {
