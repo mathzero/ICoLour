@@ -35,7 +35,7 @@ imperial_pal <- function(palette = "core", reverse = FALSE, ...) {
 #' @param ... Additional arguments passed to ggplot2::discrete_scale() or
 #'            ggplot2::scale_color_gradientn(), used respectively when discrete is TRUE or FALSE
 #'
-scale_color_imperial <- function(palette = "main", discrete = TRUE, reverse = FALSE, ...) {
+scale_color_imperial <- function(palette = "core", discrete = TRUE, reverse = FALSE, ...) {
   pal <- imperial_pal(palette = palette, reverse = reverse)
 
   if (discrete) {

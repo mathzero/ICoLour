@@ -51,18 +51,25 @@ imperial_cols <- function(...) {
 
 imperial_palettes <- list(
   # main three palettes
-  `core`  = imperial_cols("navy",
+  `core`  = imperial_cols(
+    # "navy",
                           "imperial blue" ,
-                          "light blue",
-                          "light grey",
+                          "pool blue",
+                          # "light grey",
                           "cool grey",
                           "dark grey"),
 
-  `cool`  = imperial_cols("blue", "process blue","pool blue",
-                          "teal","seaglass","dark teal","dark green",
-                          "kermit green","lime"),
+  `cool`  = imperial_cols("imperial blue",
+                          "process blue",
+                          # "pool blue",
+                          # "teal",
+                          "seaglass",
+                          # "dark teal",
+                          "dark green",
+                          "kermit green",
+                          "lime"),
 
-  `warm`   = imperial_cols("lemon yellow","tangerine","orange","red","brick","cherry red"),
+  `warm`   = imperial_cols("brick","tangerine","cherry red","lemon yellow"),
 
   # extended
   `extended` =imperial_cols("navy",
@@ -83,19 +90,19 @@ imperial_palettes <- list(
   `green` = imperial_cols("dark green", "dark teal", "blue", "kermit green"),
   `red` =  imperial_cols("brick", "orange", "imperial blue", "tangerine"),
   `blue` = imperial_cols("blue", "imperial blue", "dark teal", "pool blue"),
-  `teal_blue_plum` = imperial_cols("dark teal", "blue", "plum", "seaglass"),
-  `violet_blue_navy` =imperial_cols("violet", "blue", "navy", "pool blue"),
-  `orange_green_imperial_blue`= imperial_cols("orange", "dark green", "imperial blue", "pool blue"),
-  `brick_navy_teal` = imperial_cols("brick", "navy", "dark teal", "tangerine"),
+  `tbp` = imperial_cols("dark teal", "blue", "plum", "seaglass"),
+  `vbn` =imperial_cols("violet", "blue", "navy", "pool blue"),
+  `obib`= imperial_cols("orange", "dark green", "imperial blue", "pool blue"),
+  `bnt` = imperial_cols("brick", "navy", "dark teal", "tangerine"),
 
 
   # manufactured gradients
-  `blue_grey_gradient` = imperial_cols("navy", "imperial blue" ,
+  `bgrey_grad` = imperial_cols("navy", "imperial blue" ,
                                   "blue", "pool blue", "light blue",
                                   "light grey", "cool grey", "dark grey"
                                   ),
 
-  `blue_green_gradient` = imperial_cols("navy", "imperial blue" ,
+  `bgrn_grad` = imperial_cols("navy", "imperial blue" ,
                                        "blue", "pool blue", "light blue",
                                        "lime", "dark green"
   )
