@@ -12,15 +12,25 @@ library(ICoLour)
 
 
 # generate dummy data
-mydat=data.frame(x=rnorm(100,0,1),
-                 y=rnorm(100,0,1),
-                 col=as.factor(sample(c("A", "B", "C", "D"),size = 100, replace = T)))
+n=1000
+mydat=data.frame(x=rnorm(n,0,1),
+                 y=rnorm(n,0,1),
+                 col=as.factor(sample(c("A", "B", "C", "D","E","F"),size = n, replace = T)))
 
 # create plot with core colours
 ggplot(mydat,aes(x=x,y=y,col=col)) +
   geom_point() +
   theme_bw() +
-  scale_color_imperial(palette = 'core', discrete = T)
+  scale_color_imperial(palette = 'default', discrete = T,reverse = T)
+
+
+# create plot with core colours
+ggplot(mydat,aes(x=x,fill=col, col=col)) +
+  geom_density() +
+  theme_bw() +
+  scale_color_imperial(palette = 'default', discrete = T,reverse = F)+
+  scale_fill_imperial(palette = 'default', discrete = T,reverse = F) +
+  facet_wrap(.~col)
 
 
 # create plot with warm colours

@@ -53,11 +53,10 @@ imperial_palettes <- list(
 
   `default` = imperial_cols(
     "navy",
-    "imperial blue" ,
+    "pool blue",
     "lime",
     "tangerine",
-    "red",
-    "iris"
+    "violet"
   ),
 
 
