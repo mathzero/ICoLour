@@ -11,8 +11,10 @@
 #' @param ... Additional arguments to pass to colorRampPalette()
 #' @import ggplot2
 #' @import dichromat
+#' @import tinter
 
-imperial_pal <- function(palette = "core", reverse = FALSE, ...) {
+
+imperial_pal <- function(palette = "default", reverse = FALSE, ...) {
   pal <- imperial_palettes[[palette]]
 
   if (reverse) pal <- rev(pal)
@@ -20,6 +22,8 @@ imperial_pal <- function(palette = "core", reverse = FALSE, ...) {
   colorRampPalette(pal, ...)
 }
 
+
+tinter::tinter()
 
 #' Color scale constructor for imperial colors
 #'
@@ -35,7 +39,7 @@ imperial_pal <- function(palette = "core", reverse = FALSE, ...) {
 #' @param ... Additional arguments passed to ggplot2::discrete_scale() or
 #'            ggplot2::scale_color_gradientn(), used respectively when discrete is TRUE or FALSE
 #'
-scale_color_imperial <- function(palette = "core", discrete = TRUE, reverse = FALSE, ...) {
+scale_color_imperial <- function(palette = "default", discrete = TRUE, reverse = FALSE, ...) {
   pal <- imperial_pal(palette = palette, reverse = reverse)
 
   if (discrete) {
@@ -59,7 +63,7 @@ scale_color_imperial <- function(palette = "core", discrete = TRUE, reverse = FA
 #' @param ... Additional arguments passed to ggplot2::discrete_scale() or
 #'            ggplot2::scale_fill_gradientn(), used respectively when discrete is TRUE or FALSE
 #'
-scale_fill_imperial <- function(palette = "core", discrete = TRUE, reverse = FALSE, ...) {
+scale_fill_imperial <- function(palette = "default", discrete = TRUE, reverse = FALSE, ...) {
   pal <- imperial_pal(palette = palette, reverse = reverse)
 
   if (discrete) {

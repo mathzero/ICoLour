@@ -50,6 +50,18 @@ imperial_cols <- function(...) {
 }
 
 imperial_palettes <- list(
+
+  `default` = imperial_cols(
+    "navy",
+    "imperial blue" ,
+    "lime",
+    "tangerine",
+    "red",
+    "iris"
+  ),
+
+
+
   # main three palettes
   `core`  = imperial_cols(
     # "navy",
@@ -74,7 +86,7 @@ imperial_palettes <- list(
   # extended
   `extended` =imperial_cols("navy",
                             "imperial blue",
-                            "blue",
+                            # "blue",
                             "dark teal",
                             "dark green",
                             "lime",
