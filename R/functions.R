@@ -23,7 +23,7 @@ imperial_pal <- function(palette = "default", reverse = FALSE, ...) {
 }
 
 
-tinter::tinter()
+
 
 #' Color scale constructor for imperial colors
 #'

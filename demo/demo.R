@@ -1,7 +1,8 @@
 # Demonstration
 
 # install from github
-devtools::install_github("mathzero/ICoLour")
+# devtools::install_github("mathzero/ICoLour")
+
 
 # load libraries
 library(ggplot2)
