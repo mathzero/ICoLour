@@ -30,7 +30,7 @@ imperial_pal <- function(palette = "default", reverse = FALSE, ...) {
 #' @param palette Character name of palette in imperial_palettes. Choose from:
 #' \itemize{
 #'  \item core, cool, warm, extended,
-#'  \item pink, green, red blue,
+#'  \item pink, green, red, blue,
 #'  \item teal_blue_plum, violet_blue_navy, orange_green_imperial_blue, brick_navy_teal,
 #'  \item blue_grey_gradient, blue_green_gradient
 #' }
