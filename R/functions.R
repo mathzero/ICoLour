@@ -53,10 +53,10 @@ scale_color_imperial <- function(palette = "default", discrete = TRUE, reverse =
 #'
 #' @param palette Character name of palette in imperial_palettes. Choose from:
 #' \itemize{
-#'  \item core, cool, warm, extended,
+#'  \item default, core, cool, warm, extended,
 #'  \item pink, green, red, blue,
-#'  \item teal_blue_plum, violet_blue_navy, orange_green_imperial_blue, brick_navy_teal,
-#'  \item blue_grey_gradient, blue_green_gradient
+#'  \item tbp, vbn, obib, bnt,
+#'  \item bgrey_grad, bgrn_grad
 #' }
 #' @param discrete Boolean indicating whether color aesthetic is discrete or not
 #' @param reverse Boolean indicating whether the palette should be reversed
