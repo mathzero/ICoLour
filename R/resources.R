@@ -78,7 +78,9 @@ imperial_palettes <- list(
                           # "dark teal",
                           "dark green",
                           "kermit green",
-                          "lime"),
+                          "lime",
+                           "light blue"
+),
 
   `warm`   = imperial_cols("brick","tangerine","cherry red","lemon yellow"),
 
@@ -100,7 +102,7 @@ imperial_palettes <- list(
   `pink` =  imperial_cols("magenta pink", "violet", "plum", "purple"),
   `green` = imperial_cols("dark green", "dark teal", "blue", "kermit green"),
   `red` =  imperial_cols("brick", "orange", "imperial blue", "tangerine"),
-  `blue` = imperial_cols("blue", "imperial blue", "dark teal", "pool blue"),
+  `blue` = imperial_cols("blue", "imperial blue", "dark teal", "pool blue","light blue"),
   `tbp` = imperial_cols("dark teal", "blue", "plum", "seaglass"),
   `vbn` =imperial_cols("violet", "blue", "navy", "pool blue"),
   `obib`= imperial_cols("orange", "dark green", "imperial blue", "pool blue"),
